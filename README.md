@@ -28,20 +28,18 @@ const newModulo = 21 % 5 === 1 ;
 //Example 1:
 function returnString(str) {
   //simply return the string provided: str
-  str="Buddy";
   return str;
 }
-  returnString(str);
-
 
 function add(x, y) {
   // x and y are numbers
   // add x and y together and return the value
   // code here
-  const sum = x+y;
+  const sum = x + y;
   return sum;
+}
 
-} add(3,7);
+
 
 function subtract(x, y) {
   // subtract y from x and return the value
@@ -81,12 +79,11 @@ function areSameLength(str1, str2) {
   // return true if the two strings have the same length
   // otherwise return false
   // code here
- var str1 = "Tucker".length;
- var str2 = "Buddy".length;
- if (str1==str2) {
+ var str1 = str1.length;
+ var str2 = str2.length;
+ if (str1===str2) {
    return true;
- } 
- areSameLength(str1,str2);
+ } return false;
 }
 
 function lessThanNinety(num) {
@@ -97,106 +94,113 @@ function lessThanNinety(num) {
   if (num<90) {
     return true;
   } return false;
-}  lessThanNinety(84);
+}  
 
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
   // code here
-  if (num<50) {
+  if (num>50) {
     return true;
   } return false;
 
-} greaterThanFifty(75);
+} 
 
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
   // code here
   const rem = x%y;
-
-} getRemainder(5,2);
+return rem;
+} 
 
 function isEven(num) {
   // return true if num is even
   // otherwise return false
   // code here
-  if(num=6) {
+ 
+  if(num%2===0) {
     return true;
   } return false;
-} isEven(7);
+} 
 
 function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   // code here
-  if(num=6) {
-    return true;
+  
+      if (num%2===1) {
+    return true
   } return false;
-}isOdd(num);
+}
 
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
   // code here
-  Math.pow(4,2);
-  var num = math.pow;
-} square(num);
+   var num1 = num**2;
+   return num1;
+} 
 
 function cube(num) {
   // cube num and return the new value
   // code here
-  var num = Math.pow(4,3);
-} cube(num);
+  var num1 = Math.pow(num,3);
+  return num1;
+} 
 
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
   // code here
-  num=2;
-  exponent=2;
-  x=num**exponent;
-}raiseToPower(x)
+  var x =Math.pow(num, exponent);
+  return x;
+}
 
 function roundNumber(num) {
   // round num and return it
   // code here
-  num = math.round(4.6);
-}roundNumber(num);
+  num1 = Math.round(num);
+  return num1;
+}
 
 function roundUp(num) {
   // round num up and return it
   // code here
-  num=math.roundUp(6.7);
-} roundUp(num);
+  var num1 = Math.ceil(num);
+  return num1;
+} 
 
 
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
-  str1 = "hello world";
-  str2 = " !";
-  str3 = str1+str2;
-} addExclamationPoint(str3);
+  var str1 = str + "!";
+  return str1;
+}
 
 
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Avion', 'School' -> 'Avion School'
   // code here
-  fname= "Tucker";
-  lname= " Buddy";
-  fullname= fname+lname;
+  var name = (firstName +" "+ lastName);
+  return name;
+} 
 
-} combineNames(fullname);
+
+
+
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
-  x="hello";
-  y="sam";
-  z= x+y;
-}getGreeting(z);
+  var n = "Hello " + name + "!";
+
+  return n;
+} 
+
+
 
 // The next two questions will have you implement math area formulas. 
 // If you can't remember these area formulas then head over to Google.
@@ -204,15 +208,16 @@ function getGreeting(name) {
 function getRectangleArea(length, width) {
   // return the area of the rectangle by using length and width
   // code here
-  a=l*w;
-  } getRectangleArea(5,6);
+  let  area=(length*width); 
+  return area;
+  } 
 
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
   // code here
-  a=b*h/2;
-
-}getTriangleArea(5,8);
+  let area = (base*height)/2;
+  return area;
+}
 
 // Do not modify code below this line.
 // --------------------------------
